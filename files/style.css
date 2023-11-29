@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -111,11 +112,36 @@ header {
 
 header h1 {
     color: #fff;
-    font-size: 60px;
+    font-size: 120px;
     font-weight: 550;
     text-align: center;
     margin-top: -25vh;
     text-shadow: 6px 2px 8px rgba(0, 0, 0, 0.623);
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    animation: arrow 2s infinite;
+    font-size: 60px;
+    color: #fff;
+    bottom: 100px;
+}
+
+@keyframes arrow {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 /* Main */
@@ -163,4 +189,25 @@ main section p {
 .bgimg-2 {
     background-image: url(img/svpavel.jpg);
     min-height: 800px;
+}
+
+.bgimg-3 {
+    background-image: url(img/vrhnika\ \(1\).jpg);
+    min-height: 800px;
+}
+
+.bgimg-4 {
+    background-image: url(img/Vrhnika-Barje1.jpg);
+    min-height: 800px;
+}
+
+footer {
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
 }
