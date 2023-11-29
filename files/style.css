@@ -144,6 +144,25 @@ header h1 {
     }
 }
 
+#animatedText {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 /* Main */
 main {
     margin-top: 100vh;
